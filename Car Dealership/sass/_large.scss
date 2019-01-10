@@ -1,0 +1,37 @@
+/* ------------------- BODY ------------------*/
+body{background-image: url(../images/polonez_car.png);}
+
+header, nav, main, footer {max-width: 60rem; margin: 0 auto; box-shadow: 0 0 10px #000000;}
+body {padding: 1rem 0;}
+
+
+
+/* ------------------- NAVIGATION ------------------*/
+nav {
+	
+	ul {
+		margin-left: $gutter;
+		border-left: 1px solid rgba(0,0,0,0.3);
+	}
+	ul li {width: auto;}
+	ul li:last-child{border-right: 1px solid rgba(0,0,0,0.3);}
+	ul li a {
+		padding: .5rem 1rem;
+	}
+
+}/*end of nav*/
+
+	
+/* ------------------- MAIN ------------------*/
+main {
+	figure.photo {width: 25%-$gutterdbl; float: left;}
+
+	div.blog article {
+		float: left;
+		width: 33.33%-$gutterdbl;
+	}/*end of blog*/
+
+	div.blog article:nth-child(2n+1) {clear: none;}
+	div.blog article:nth-child(3n+1) {clear: left;}
+
+	}/*end of main*/
